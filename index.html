@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Inani Long Bay - Luxury Beach Resort in Cox's Bazar</title>
+    <meta
+      name="description"
+      content="Experience luxury at Hotel Inani Long Bay, a premium beachfront resort in Cox's Bazar. Modern amenities, stunning ocean views, and warm hospitality await."
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- EmailJS for contact form -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+
+  <body class="font-sans">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+      id="navbar"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <a href="#home" class="flex items-center space-x-2">
+            <!-- Logo placeholder - replace with actual logo image -->
+            <img
+              src="logo.png"
+              alt="Hotel Inani Long Bay"
+              class="h-10 w-auto"
+            />
+            <!-- <span class="text-xl font-bold text-gray-800"
+              >Hotel Inani Long Bay</span
+            > -->
+          </a>
+
+          <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <a
+              href="#home"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
+              >About</a
+            >
+            <a
+              href="#details"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base hidden lg:block"
+              >Why Choose Us</a
+            >
+            <a
+              href="#rooms"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base hidden lg:block"
+              >Rooms</a
+            >
+            <a
+              href="#amenities"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
+              >Amenities</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-blue-600 transition-colors text-sm lg:text-base"
+              >Contact</a
+            >
+            <a href="#contact">
+              <button
+                class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-4 lg:px-6 py-2 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-sm lg:text-base font-semibold"
+              >
+                Book Now
+              </button>
+            </a>
+          </div>
+
+          <button class="md:hidden text-gray-700 p-2" id="mobile-menu-btn">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        class="hidden md:hidden bg-white border-t shadow-lg"
+        id="mobile-menu"
+      >
+        <div class="px-4 py-6 space-y-4">
+          <a
+            href="#home"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >About</a
+          >
+          <a
+            href="#details"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >Why Choose Us</a
+          >
+          <a
+            href="#rooms"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >Rooms</a
+          >
+          <a
+            href="#amenities"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >Amenities</a
+          >
+          <a
+            href="#contact"
+            class="block text-gray-700 hover:text-blue-600 transition-colors py-2 text-base font-medium"
+            >Contact</a
+          >
+          <div class="pt-4 border-t">
+            <a href="#contact">
+              <button
+                class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all duration-300 font-semibold"
+              >
+                Book Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section
+      id="home"
+      class="relative h-[70vh] md:h-[calc(100vh-72px)] overflow-hidden"
+    >
+      <!-- Slider Container -->
+      <div class="relative w-full h-full">
+        <!-- Slide 1 -->
+        <div
+          class="hero-slide absolute inset-0 transition-opacity duration-1000"
+          data-slide="0"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-blue-900/30 via-blue-900/50 to-blue-900/70 z-20"
+          ></div>
+          <img
+            src="image2.png"
+            alt="Beautiful beach view"
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0"
+          data-slide="1"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-blue-900/30 via-blue-900/50 to-blue-900/70 z-20"
+          ></div>
+          <img
+            src="image3.png"
+            alt="Luxury hotel room"
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="hero-slide absolute inset-0 transition-opacity duration-1000 opacity-0"
+          data-slide="2"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-blue-900/60 via-blue-900/30 to-blue-900/70 z-10"
+          ></div>
+          <img
+            src="image.png"
+            alt="Deluxe hotel room"
+            class="w-full h-full object-cover object-center"
+          />
+        </div>
+
+        <!-- Prev/Next arrows (hidden on mobile) -->
+        <button
+          class="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md text-white p-3 rounded-full hover:bg-white/40 transition-all duration-300 z-30 items-center justify-center"
+          id="prev-slide"
+        >
+          <i class="fas fa-chevron-left text-lg"></i>
+        </button>
+        <button
+          class="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md text-white p-3 rounded-full hover:bg-white/40 transition-all duration-300 z-30 items-center justify-center"
+          id="next-slide"
+        >
+          <i class="fas fa-chevron-right text-lg"></i>
+        </button>
+
+        <!-- Hero Content — centered over slides -->
+        <div
+          class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-6"
+        >
+          <h1
+            class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-5 leading-tight animate-fade-in-up"
+          >
+            Welcome to Paradise
+          </h1>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl mb-7 sm:mb-9 max-w-xl mx-auto animate-fade-in-up animation-delay-200 leading-relaxed"
+            style="text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5)"
+          >
+            Experience luxury and tranquility at Hotel Inani Long Bay, where the
+            pristine beaches of Cox's Bazar meet world-class hospitality
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-xs sm:max-w-none animate-fade-in-up animation-delay-400"
+          >
+            <a href="#contact">
+              <button
+                class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-full text-sm sm:text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <i class="fas fa-calendar-check mr-2"></i>Check Availability
+              </button>
+            </a>
+            <a href="#contact">
+              <button
+                class="w-full sm:w-auto bg-white/15 backdrop-blur-md text-white px-7 py-3 rounded-full text-sm sm:text-base font-semibold border border-white/40 hover:bg-white/25 transition-all duration-300"
+              >
+                <i class="fas fa-play-circle mr-2"></i>Virtual Tour
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Slide Indicators — bottom center, above fold -->
+        <div
+          class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 z-30"
+          id="slide-indicators"
+        >
+          <button class="slide-dot active" data-indicator="0"></button>
+          <button class="slide-dot" data-indicator="1"></button>
+          <button class="slide-dot" data-indicator="2"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="lg:py-20 py-5 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800"
+            >
+              Discover <span class="text-blue-600">Inani Long Bay</span>
+            </h2>
+            <p
+              class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            >
+              Nestled along the pristine shores of Inani Beach, Hotel Inani Long
+              Bay offers an unparalleled beachfront experience in Cox's Bazar.
+              Our luxury resort combines modern elegance with the natural beauty
+              of Bangladesh's longest beach.
+            </p>
+            <p
+              class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            >
+              With our commitment to exceptional service and warm hospitality,
+              we ensure every guest experiences the perfect blend of relaxation
+              and adventure. From our stunning ocean views to our world-class
+              amenities, your stay with us will be nothing short of
+              extraordinary.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-star text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">4.2 Rating</h4>
+                  <p class="text-sm text-gray-600">307 Reviews</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center"
+                >
+                  <i class="fas fa-umbrella-beach text-orange-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Beachfront</h4>
+                  <p class="text-sm text-gray-600">Direct Access</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Hotel exterior"
+              class="rounded-2xl shadow-2xl w-full"
+            />
+            <div
+              class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg"
+            >
+              <div class="flex items-center space-x-3">
+                <div
+                  class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-check text-green-600"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">Free Wi-Fi</p>
+                  <p class="text-sm text-gray-600">Available Everywhere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Details Section -->
+    <section id="details" class="py-10 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 lg:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            Why Choose <span class="text-blue-600">Inani Long Bay</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Discover what makes our hotel the perfect destination for your next
+            getaway
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+          <div class="bg-gray-50 p-8 rounded-2xl text-center">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-award text-2xl text-blue-600"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Award-Winning Service
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Recognized for excellence in hospitality and guest satisfaction
+              with our dedicated team of professionals.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl text-center">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i
+                class="fas fa-location-dot text-lg sm:text-2xl text-blue-600"
+              ></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Prime Beachfront Location
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Direct access to the pristine Inani Beach, offering breathtaking
+              sunset views and serene coastal beauty.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl text-center">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-utensils text-lg sm:text-2xl text-blue-600"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Exquisite Dining
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Savor authentic local and international cuisine prepared by our
+              renowned chefs using the freshest ingredients.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl text-center">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-spa text-lg sm:text-2xl text-blue-600"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Wellness & Recreation
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Rejuvenate your body and mind with our spa services, fitness
+              center, and exciting water sports activities.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl text-center">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-users text-lg sm:text-2xl text-blue-600"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Perfect for Events
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Host memorable weddings, corporate events, and special occasions
+              in our elegant event spaces.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl text-center">
+            <div
+              class="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i
+                class="fas fa-shield-halved text-lg sm:text-2xl text-blue-600"
+              ></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+              Safety & Security
+            </h3>
+            <p class="text-sm sm:text-base text-gray-600">
+              Your safety is our priority with 24/7 security, modern
+              surveillance systems, and emergency response protocols.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="mt-5 lg:mt-16 bg-gradient-to-r from-blue-600 to-blue-800 p-6 lg:p-8 rounded-2xl text-white text-center"
+        >
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">
+            Experience the Difference
+          </h3>
+          <p class="text-sm sm:text-base md:text-lg mb-5 max-w-2xl mx-auto">
+            Join thousands of satisfied guests who have made Hotel Inani Long
+            Bay their preferred destination for luxury beach vacations in Cox's
+            Bazar.
+          </p>
+          <a href="#contact">
+            <button
+              class="bg-white text-blue-600 px-6 sm:px-8 py-2 lg:py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              Start Your Journey
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-5 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-6 lg:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            Luxury <span class="text-blue-600">Rooms</span> & Suites
+          </h2>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Each room is designed to provide maximum comfort with stunning ocean
+            views and modern amenities
+          </p>
+        </div>
+
+        <div
+          id="rooms-max-w-7xl px-2"
+          class="grid md:grid-cols-3 gap-4 lg:gap-8"
+        >
+          <!-- Rooms will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Details Modal -->
+    <div
+      id="room-modal"
+      class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      >
+        <div class="p-8">
+          <div id="modal-room-content">
+            <!-- Modal content will be dynamically loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-10 lg:py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            World-Class <span class="text-blue-600">Amenities</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Experience luxury with our comprehensive range of modern amenities
+            and services
+          </p>
+        </div>
+
+        <div
+          id="amenities-container"
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <!-- Amenities will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-6 lg:mb-12">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4"
+          >
+            Get in <span class="text-blue-600">Touch</span>
+          </h2>
+          <p
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            Have questions? We'd love to hear from you. Send us a message and
+            we'll respond as soon as possible.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 lg:gap-12 max-w-6xl mx-auto">
+          <!-- Contact Form -->
+          <div class="bg-gray-50 p-5 sm:p-8 rounded-2xl">
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label
+                  class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition-colors text-sm sm:text-base"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition-colors text-sm sm:text-base"
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition-colors text-sm sm:text-base"
+                  placeholder="+880 1XXX XXX XXX"
+                />
+              </div>
+
+              <div>
+                <label
+                  class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  rows="4"
+                  required
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 transition-colors text-sm sm:text-base"
+                  placeholder="Tell us about your inquiry..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>
+                Send Message
+              </button>
+            </form>
+
+            <div id="form-message" class="mt-4 hidden"></div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div
+              class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 sm:p-8 rounded-2xl text-white"
+            >
+              <h3 class="text-xl sm:text-2xl font-bold mb-6">
+                Contact Information
+              </h3>
+
+              <div class="space-y-4">
+                <a
+                  href="https://www.google.com/maps/place/Hotel+Inani+Long+Bay/@21.2383978,92.047042,17z/data=!4m9!3m8!1s0x30addb6d2c33c545:0x888e080492cd7f61!5m2!4m1!1i2!8m2!3d21.2383978!4d92.0496169!16s%2Fg%2F11hz6tzrf_?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  class="flex items-start space-x-3 sm:space-x-4"
+                >
+                  <div
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-map-marker-alt text-sm sm:text-base"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm sm:text-base">Address</p>
+                    <p class="text-white/90 text-xs sm:text-sm">
+                      Inani Beach, Cox's Bazar 4750, Bangladesh
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:+8801995599889"
+                  class="flex items-center space-x-3 sm:space-x-4"
+                >
+                  <div
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-phone text-sm sm:text-base"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm sm:text-base">Phone</p>
+                    <p class="text-white/90 text-xs sm:text-sm">
+                      +880 1995-599889
+                    </p>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:hom.inanilongbaycox@gmail.com"
+                  class="flex items-center space-x-3 sm:space-x-4"
+                >
+                  <div
+                    class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-envelope text-sm sm:text-base"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sm sm:text-base">Email</p>
+                    <p class="text-white/90 text-xs sm:text-sm">
+                      hom.inanilongbaycox@gmail.com
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 p-4 sm:p-6 rounded-2xl">
+              <h4 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
+                Check-in / Check-out
+              </h4>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <p class="text-xs sm:text-sm text-gray-600">Check-in</p>
+                  <p class="text-base sm:text-lg font-semibold text-gray-800">
+                    14:00
+                  </p>
+                </div>
+                <div>
+                  <p class="text-xs sm:text-sm text-gray-600">Check-out</p>
+                  <p class="text-base sm:text-lg font-semibold text-gray-800">
+                    11:00
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-gray-50 p-4 sm:p-6 rounded-2xl flex items-center justify-between"
+            >
+              <h4 class="text-lg sm:text-xl font-bold text-gray-800">
+                Follow Us
+              </h4>
+              <div class="flex space-x-3 sm:space-x-4">
+                <a
+                  href="https://www.facebook.com/hotelinanilongbay/"
+                  target="_blank"
+                  class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/hotel.inani.long.bay/"
+                  target="_blank"
+                  class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition-all"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 lg:py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg flex items-center justify-center"
+              >
+                <i class="fas fa-umbrella-beach text-white"></i>
+              </div>
+              <span class="text-xl font-bold">Hotel Inani Long Bay</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Experience luxury and tranquility at Cox's Bazar's premier
+              beachfront resort.
+            </p>
+            <div class="space-y-2 text-sm text-gray-400">
+              <p>
+                <i class="fas fa-star text-yellow-500 mr-2"></i>4.2 Rating (307
+                Reviews)
+              </p>
+              <p>
+                <i class="fas fa-award text-blue-400 mr-2"></i>Award-Winning
+                Service
+              </p>
+              <p>
+                <i class="fas fa-shield-halved text-green-400 mr-2"></i>Safety
+                Certified
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#home" class="hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#about" class="hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#details" class="hover:text-white transition-colors"
+                  >Why Choose Us</a
+                >
+              </li>
+              <li>
+                <a href="#rooms" class="hover:text-white transition-colors"
+                  >Rooms</a
+                >
+              </li>
+              <li>
+                <a href="#amenities" class="hover:text-white transition-colors"
+                  >Amenities</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Restaurant & Bar</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Spa & Wellness</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Weddings & Events</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Airport Transfer</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Tour Packages</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-white transition-colors"
+                  >Conference Facilities</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Hotel Information</h4>
+            <div class="space-y-3 text-gray-400">
+              <a
+                href="https://www.google.com/maps/place/Hotel+Inani+Long+Bay/@21.2383978,92.047042,17z/data=!4m9!3m8!1s0x30addb6d2c33c545:0x888e080492cd7f61!5m2!4m1!1i2!8m2!3d21.2383978!4d92.0496169!16s%2Fg%2F11hz6tzrf_?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                class="flex items-start space-x-3"
+              >
+                <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+                <div>
+                  <p class="font-semibold text-white">Address</p>
+                  <p class="text-sm">
+                    Inani Beach, Cox's Bazar, Bangladesh, 4750
+                  </p>
+                </div>
+              </a>
+              <a href="tel:+8801995599889" class="flex items-start space-x-3">
+                <i class="fas fa-phone text-blue-400 mt-1"></i>
+                <div>
+                  <p class="font-semibold text-white">Phone</p>
+                  <p class="text-sm">+880 1995-599889</p>
+                </div>
+              </a>
+              <a
+                href="mailto:hom.inanilongbaycox@gmail.com"
+                class="flex items-start space-x-3"
+              >
+                <i class="fas fa-envelope text-blue-400 mt-1"></i>
+                <div>
+                  <p class="font-semibold text-white">Email</p>
+                  <p class="text-sm">hom.inanilongbaycox@gmail.com</p>
+                </div>
+              </a>
+              <div class="flex items-start space-x-3">
+                <i class="fas fa-clock text-blue-400 mt-1"></i>
+                <div>
+                  <p class="font-semibold text-white">Check-in/Check-out</p>
+                  <p class="text-sm">14:00 / 11:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="w-full">
+            <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+            <div
+              class="flex flex-col md:flex-row md:justify-between md:items-center gap-y-4 w-full"
+            >
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.facebook.com/hotelinanilongbay/"
+                  target="_blank"
+                  class="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/hotel.inani.long.bay/"
+                  target="_blank"
+                  class="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 text-white rounded-lg flex items-center justify-center hover:shadow-lg transition-all"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div
+                class="text-gray-400 flex flex-col md:flex-row gap-4 md:gap-2 md:divide-x-2 divide-gray-600 text-center md:text-start"
+              >
+                <p>&copy; 2026 Hotel Inani Long Bay. All rights reserved</p>
+                <a
+                  href="https://fistech.org"
+                  target="_blank"
+                  class="text-center pl-4 md:pl-2"
+                  ><b>Developed by Fistech Ventures</b></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="rooms-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
